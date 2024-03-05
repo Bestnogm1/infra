@@ -9,7 +9,7 @@ import * as origin from "aws-cdk-lib/aws-cloudfront-origins";
 export class InfraStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
-
+    //
     //create S3
     const bucket = new s3.Bucket(this, 'testwebsites3', {
       websiteIndexDocument: 'index.html',
